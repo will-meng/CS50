@@ -1,0 +1,12 @@
+1.  stdint.h is a header file that defines typedefs for data types of specific widths
+2.  These types are useful when writing portable code that might be compiled differently on different machines, as they have explicit sizes/widths.
+3.  BYTE = 1 byte, DWORD = 4 bytes, LONG = 4 bytes, WORD = 2 bytes
+4.  ASCII - BM, Hex - 424d, Dec - 6677
+5.  bfSize refers to the bitmap's entire filesize in bytes (246 for smiley.bmp) while biSize refers to just the bi header's size (40 bytes)
+6.  bitmap is a top-down DIB and origin is the upper left corner
+7.  biBitCount
+8.  The file might not exist or might have protections preventing read access
+9.  Because the headers of each bitmap only need to be copied once into the structures
+10. 4 - (3*3)%4 = 3
+11. fseek changes the current offset of the file pointer
+12. SEEK_CUR means offset is in relation to its current position (as opposed to the beginning or end of the file)
